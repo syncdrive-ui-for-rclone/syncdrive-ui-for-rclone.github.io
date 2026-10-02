@@ -43,11 +43,19 @@
         .highlight { font-weight: bold; color: #0288d1; }
         
         /* 📍 ĐIỀU CHỈNH VỊ TRÍ READ PRIVACY POLICY: ĐƯA LÊN KHU VỰC TRUNG TÂM */
-        .policy-banner { background-color: #e1f5fe; border-left: 4px solid #0288d1; padding: 15px 20px; margin: 30px 0; border-radius: 0 4px 4px 0; display: flex; justify-content: space-between; align-items: center; gap: 15px; }
+        .policy-banner { background-color: #e1f5fe; border-left: 4px solid #0288d1; padding: 15px 20px; margin: 25px 0; border-radius: 0 4px 4px 0; display: flex; justify-content: space-between; align-items: center; gap: 15px; }
         .policy-text { margin: 0; font-size: 0.95rem; color: #01579b; font-weight: 500; }
+        
+        /* 🤖 STYLE NÚT TẢI GOOGLE PLAY STORE MỚI */
+        .store-banner { display: flex; background-color: #f1f8e9; border: 1px dashed #7cb342; border-radius: 8px; padding: 20px; margin: 25px 0; align-items: center; justify-content: space-between; gap: 15px; }
+        .store-text { margin: 0; font-size: 0.95rem; color: #33691e; font-weight: 500; }
+        
         .btn-link { display: inline-block; background: #0288d1; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.9rem; transition: background 0.2s; white-space: nowrap; }
         .btn-link:hover { background: #01579b; }
         
+        .btn-playstore { display: inline-block; background: #4caf50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.9rem; transition: background 0.2s; white-space: nowrap; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .btn-playstore:hover { background: #388e3c; }
+
         .contact-box { background-color: #f5f5f5; padding: 15px 20px; border-radius: 6px; font-size: 0.9rem; margin-top: 15px; border: 1px solid #e0e0e0; }
         .footer { margin-top: 25px; text-align: center; font-size: 0.9rem; color: #888; }
     </style>
@@ -68,6 +76,12 @@
         <p>SyncDrive: UI for Rclone brings the ultimate power of the command-line rclone tool straight to your preferred multi-platform devices with a clean, intuitive, and modern graphical interface. Effortlessly manage, synchronize, and back up your local folders to various cloud storage providers with just a few taps.</p>
         
         <p>Whether you are a power user, a developer, or someone looking for a robust self-hosted backup solution, SyncDrive bridges the gap between rclone’s legendary backend performance and cross-platform mobile or desktop convenience.</p>
+
+        <!-- 🤖 3. ADDED: KHU VỰC LIÊN KẾT ĐẾN GOOGLE PLAY STORE -->
+        <div class="store-banner">
+            <p class="store-text">SyncDrive is officially available on the Google Play Store for mobile deployment.</p>
+            <a href="https://play.google.com/store/apps/details?id=drive.autosync.backup" target="_blank" class="btn-playstore">Get it on Google Play</a>
+        </div>
 
         <!-- 🖼️ FEATURE IMAGE -->
         <div class="feature-img-container">
@@ -115,6 +129,8 @@
             <strong>Application Support Email:</strong> <a href="mailto:thangbx2014@gmail.com">thangbx2014@gmail.com</a><br>
             <strong>Official Project Repository:</strong> <a href="https://github.com/syncdrive-ui-for-rclone/syncdrive-ui-for-rclone.github.io" target="_blank">GitHub Link</a>
         </div>
+
+
 
         <p style="margin-top: 30px;">Streamline your cloud workflow today with SyncDrive: UI for Rclone!</p>
     </div>
