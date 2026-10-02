@@ -4,29 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="lL-JuW8qscM2NgrEp7LknE3Q7rl-AMSAnrEM-_p1EA8" />
+    
     <title>SyncDrive: UI for Rclone - Official Homepage</title>
+    
+    <!-- 🌐 1. ADDED FAVICON & APP ICONS (Giải quyết lỗi thiếu nhận diện tài sản) -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+    <!-- 🏷️ 2. ADDED META OPEN GRAPH (Giúp hệ thống quét tự động nhận diện Feature Image & Logo) -->
+    <meta property="og:title" content="SyncDrive: UI for Rclone" />
+    <meta property="og:description" content="The ultimate graphical user interface for rclone on Android & Desktop platforms." />
+    <meta property="og:image" content="feature-image.png" />
+    <meta property="og:url" content="https://github.io" />
+    <meta property="og:type" content="website" />
+
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 40px 20px; color: #333; background-color: #f9f9f9; }
         .container { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        h1 { color: #0288d1; font-size: 2.5rem; margin-bottom: 10px; }
+        
+        /* 🎨 STYLE CHO KHU VỰC LOGO THƯƠNG HIỆU MỚI */
+        .brand-header { display: flex; align-items: center; gap: 20px; margin-bottom: 20px; }
+        .app-logo { width: 80px; height: 80px; border-radius: 16px; object-fit: cover; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .brand-text { display: flex; flex-direction: column; }
+        
+        h1 { color: #0288d1; font-size: 2.5rem; margin: 0; }
         h2 { color: #333; font-size: 1.5rem; margin-top: 30px; border-bottom: 2px solid #eee; padding-bottom: 8px; }
-        .tagline { font-size: 1.2rem; color: #666; font-style: italic; margin-bottom: 30px; }
+        .tagline { font-size: 1.2rem; color: #666; font-style: italic; margin: 5px 0 0 0; }
+        
+        /* 🖼️ STYLE CHO FEATURE IMAGE */
+        .feature-img-container { margin: 25px 0; width: 100%; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.08); }
+        .feature-image { width: 100%; height: auto; display: block; }
+        
         ul { padding-left: 20px; }
         li { margin-bottom: 10px; }
         .highlight { font-weight: bold; color: #0288d1; }
-        .footer { margin-top: 5px; text-align: center; font-size: 0.9rem; color: #888; }
-        .btn-link { display: inline-block; background: #0288d1; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; }
+        
+        /* 📍 ĐIỀU CHỈNH VỊ TRÍ READ PRIVACY POLICY (Gom cụm pháp lý lên trên phần Legal) */
+        .policy-banner { background-color: #e1f5fe; border-left: 4px solid #0288d1; padding: 15px 20px; margin: 30px 0; border-radius: 0 4px 4px 0; display: flex; justify-content: space-between; align-items: center; gap: 15px; }
+        .policy-text { margin: 0; font-size: 0.95rem; color: #01579b; font-weight: 500; }
+        .btn-link { display: inline-block; background: #0288d1; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.9rem; transition: background 0.2s; white-space: nowrap; }
         .btn-link:hover { background: #01579b; }
+        
+        .contact-box { background-color: #f5f5f5; padding: 15px 20px; border-radius: 6px; font-size: 0.9rem; margin-top: 15px; border: 1px solid #e0e0e0; }
+        .footer { margin-top: 25px; text-align: center; font-size: 0.9rem; color: #888; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>SyncDrive: UI for Rclone</h1>
-        <p class="tagline">The ultimate graphical user interface for rclone on Android</p>
+        <!-- 🎯 THÊM KHU VỰC LOGO ỨNG DỤNG -->
+        <div class="brand-header">
+            <img src="logo.png" alt="SyncDrive App Logo" class="app-logo" />
+            <div class="brand-text">
+                <h1>SyncDrive: UI for Rclone</h1>
+                <p class="tagline">The ultimate graphical user interface for rclone on Android</p>
+            </div>
+        </div>
         
         <p>SyncDrive: UI for Rclone brings the ultimate power of the command-line rclone tool straight to your Android device with a clean, intuitive, and modern graphical interface. Effortlessly manage, synchronize, and back up your local folders to various cloud storage providers with just a few taps.</p>
         
         <p>Whether you are a power user, a developer, or someone looking for a robust self-hosted backup solution, SyncDrive bridges the gap between rclone’s legendary backend performance and mobile convenience.</p>
+
+        <!-- 🖼️ THÊM FEATURE IMAGE (ẢNH ĐẠI DIỆN TÍNH NĂNG/SCREENSHOT APP) -->
+        <div class="feature-img-container">
+            <img src="feature-image.png" alt="SyncDrive Features Showcase" class="feature-image" />
+        </div>
+
+        <!-- 📍 ĐIỀU CHỈNH VỊ TRÍ READ PRIVACY POLICY: ĐƯA LÊN KHU VỰC TRUNG TÂM -->
+        <div class="policy-banner">
+            <p class="policy-text">We are committed to protecting your personal data and privacy standards.</p>
+            <a href="privacy-policy.html" class="btn-link">Read Privacy Policy</a>
+        </div>
         
         <h2>KEY FEATURES</h2>
         <ul>
@@ -55,11 +103,15 @@
         <h2>LEGAL & CREDITS</h2>
         <p>SyncDrive is an independent graphical user interface (UI) client for rclone. It is not officially affiliated with, endorsed, or sponsored by the rclone core development team. Rclone is an open-source project licensed under the MIT License. SyncDrive is developed in compliance with all relevant open-source guidelines.</p>
         
-        <p>Streamline your cloud workflow today with SyncDrive: UI for Rclone!</p>
-        
-        <div style="text-align: center; margin-top: 40px;">
-            <a href="privacy-policy.html" class="btn-link">Read Privacy Policy</a>
+        <!-- 📧 THÊM KHU VỰC THÔNG TIN LIÊN LẠC (Developer Contact - Bắt buộc để Google duyệt) -->
+        <h2>DEVELOPER CONTACT</h2>
+        <p>If you have any questions, feedback, or compliance inquiries regarding SyncDrive, feel free to reach out directly to the developer profile:</p>
+        <div class="contact-box">
+            <strong>Application Support Email:</strong> <a href="mailto:thangbx2014@gmail.com">thangbx2014@gmail.com</a><br>
+            <strong>Official Project Repository:</strong> <a href="https://github.com" target="_blank">GitHub Link</a>
         </div>
+
+        <p style="margin-top: 30px;">Streamline your cloud workflow today with SyncDrive: UI for Rclone!</p>
     </div>
     <div class="footer">
         <p>&copy; 2026 SyncDrive. All rights reserved.</p>
