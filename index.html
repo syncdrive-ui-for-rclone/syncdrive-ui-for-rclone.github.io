@@ -9,14 +9,15 @@
     
     <!-- 🌐 1. ADDED FAVICON & APP ICONS (Giải quyết lỗi thiếu nhận diện tài sản) -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="icon-32x32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="AppIcon-60x60@3x.png">
 
     <!-- 🏷️ 2. ADDED META OPEN GRAPH (Giúp hệ thống quét tự động nhận diện Feature Image & Logo) -->
     <meta property="og:title" content="SyncDrive: UI for Rclone" />
-    <meta property="og:description" content="The ultimate graphical user interface for rclone on Android & Desktop platforms." />
-    <meta property="og:image" content="feature-image.png" />
-    <meta property="og:url" content="https://github.io" />
+    <meta property="og:description" content="The ultimate graphical user interface for rclone on Mobile & Desktop platforms." />
+    <!-- 🔍 ĐÃ SỬA: Đổi đuôi ảnh sang .jpeg cho khớp chính xác với file trên repo của bạn -->
+    <meta property="og:image" content="feature-image.jpeg" />
+    <meta property="og:url" content="https://syncdrive-ui-for-rclone.github.io/" />
     <meta property="og:type" content="website" />
 
     <style>
@@ -30,6 +31,7 @@
         
         h1 { color: #0288d1; font-size: 2.5rem; margin: 0; }
         h2 { color: #333; font-size: 1.5rem; margin-top: 30px; border-bottom: 2px solid #eee; padding-bottom: 8px; }
+        /* 🔍 ĐÃ SỬA: Cập nhật mô tả tagline đa nền tảng */
         .tagline { font-size: 1.2rem; color: #666; font-style: italic; margin: 5px 0 0 0; }
         
         /* 🖼️ STYLE CHO FEATURE IMAGE */
@@ -40,7 +42,7 @@
         li { margin-bottom: 10px; }
         .highlight { font-weight: bold; color: #0288d1; }
         
-        /* 📍 ĐIỀU CHỈNH VỊ TRÍ READ PRIVACY POLICY (Gom cụm pháp lý lên trên phần Legal) */
+        /* 📍 ĐIỀU CHỈNH VỊ TRÍ READ PRIVACY POLICY: ĐƯA LÊN KHU VỰC TRUNG TÂM */
         .policy-banner { background-color: #e1f5fe; border-left: 4px solid #0288d1; padding: 15px 20px; margin: 30px 0; border-radius: 0 4px 4px 0; display: flex; justify-content: space-between; align-items: center; gap: 15px; }
         .policy-text { margin: 0; font-size: 0.95rem; color: #01579b; font-weight: 500; }
         .btn-link { display: inline-block; background: #0288d1; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.9rem; transition: background 0.2s; white-space: nowrap; }
@@ -52,25 +54,27 @@
 </head>
 <body>
     <div class="container">
-        <!-- 🎯 THÊM KHU VỰC LOGO ỨNG DỤNG -->
+        <!-- 🎯 LOGO & TAGLINE ĐA NỀN TẢNG MỚI -->
         <div class="brand-header">
             <img src="logo.png" alt="SyncDrive App Logo" class="app-logo" />
             <div class="brand-text">
                 <h1>SyncDrive: UI for Rclone</h1>
-                <p class="tagline">The ultimate graphical user interface for rclone on Android</p>
+                <!-- 🔍 ĐÃ SỬA: Đổi sang Multi-platform -->
+                <p class="tagline">The ultimate graphical user interface for rclone on Multi-platform ecosystems</p>
             </div>
         </div>
         
-        <p>SyncDrive: UI for Rclone brings the ultimate power of the command-line rclone tool straight to your Android device with a clean, intuitive, and modern graphical interface. Effortlessly manage, synchronize, and back up your local folders to various cloud storage providers with just a few taps.</p>
+        <!-- 🔍 ĐÃ SỬA: Đồng bộ mô tả tổng quan -->
+        <p>SyncDrive: UI for Rclone brings the ultimate power of the command-line rclone tool straight to your preferred multi-platform devices with a clean, intuitive, and modern graphical interface. Effortlessly manage, synchronize, and back up your local folders to various cloud storage providers with just a few taps.</p>
         
-        <p>Whether you are a power user, a developer, or someone looking for a robust self-hosted backup solution, SyncDrive bridges the gap between rclone’s legendary backend performance and mobile convenience.</p>
+        <p>Whether you are a power user, a developer, or someone looking for a robust self-hosted backup solution, SyncDrive bridges the gap between rclone’s legendary backend performance and cross-platform mobile or desktop convenience.</p>
 
-        <!-- 🖼️ THÊM FEATURE IMAGE (ẢNH ĐẠI DIỆN TÍNH NĂNG/SCREENSHOT APP) -->
+        <!-- 🖼️ FEATURE IMAGE -->
         <div class="feature-img-container">
-            <img src="feature-image.png" alt="SyncDrive Features Showcase" class="feature-image" />
+            <img src="feature-image.jpeg" alt="SyncDrive Features Showcase" class="feature-image" />
         </div>
 
-        <!-- 📍 ĐIỀU CHỈNH VỊ TRÍ READ PRIVACY POLICY: ĐƯA LÊN KHU VỰC TRUNG TÂM -->
+        <!-- 📍 PRIVACY POLICY BANNER -->
         <div class="policy-banner">
             <p class="policy-text">We are committed to protecting your personal data and privacy standards.</p>
             <a href="privacy-policy.html" class="btn-link">Read Privacy Policy</a>
@@ -79,36 +83,37 @@
         <h2>KEY FEATURES</h2>
         <ul>
             <li><span class="highlight">Native Cloud Integration:</span> Connect seamlessly to Google Drive and Dropbox using secure, modern authentication standards (OAuth 2.0 & PKCE) without exposing your sensitive credentials.</li>
-            <li><span class="highlight">Bi-directional Synchronization:</span> Set up flexible sync pairs between your phone’s internal storage and your cloud remotes to ensure your data is always up to date.</li>
-            <li><span class="highlight">Background Sync Operations:</span> Keep your file transfers running reliably in the background via Android Foreground Services, preventing the system from interrupting your sync queues.</li>
+            <li><span class="highlight">Bi-directional Synchronization:</span> Set up flexible sync pairs between your device's internal storage and your cloud remotes to ensure your data is always up to date.</li>
+            <li><span class="highlight">Background Sync Operations:</span> Keep your file transfers running reliably in the background via specialized native background core systems, preventing the platform from interrupting your sync queues.</li>
             <li><span class="highlight">Advanced Remote Management:</span> Create, update, or delete rclone remotes directly inside the app.</li>
             <li><span class="highlight">Offline-First Resilience:</span> SyncDrive safely stores your localized configurations encrypted within your app space, ensuring your configuration remains intact.</li>
         </ul>
 
         <h2>PRIVACY & SECURITY FIRST</h2>
         <ul>
-            <li><span class="highlight">Zero Third-Party Servers:</span> Your data never touches our servers. SyncDrive communicates directly between your Android device and your chosen cloud provider.</li>
-            <li><span class="highlight">PKCE Enhanced Security:</span> Built strictly following the RFC 8252 security standards for mobile applications, eliminating old insecure local webserver callbacks.</li>
+            <li><span class="highlight">Zero Third-Party Servers:</span> Your data never touches our servers. SyncDrive communicates directly between your local device and your chosen cloud provider.</li>
+            <li><span class="highlight">PKCE Enhanced Security:</span> Built strictly following the RFC 8252 security standards for modern desktop and mobile applications, eliminating old insecure local webserver callbacks.</li>
             <li><span class="highlight">Open & Transparent:</span> SyncDrive respects user privacy. Your rclone.conf credentials are kept strictly localized on your device.</li>
         </ul>
 
         <h2>IMPORTANT PERMISSION NOTICE</h2>
-        <p>To deliver its core functionality, SyncDrive requires the <strong>MANAGE_EXTERNAL_STORAGE (All Files Access)</strong> permission. As a specialized backup and file synchronization manager, this permission is strictly utilized to:</p>
+        <!-- 🔍 ĐÃ SỬA: Giải thích rõ quyền này áp dụng khi chạy trên biến thể Android -->
+        <p>To deliver its core functionality on Android deployment profiles, SyncDrive requires the <strong>MANAGE_EXTERNAL_STORAGE (All Files Access)</strong> permission. As a specialized backup and file synchronization manager, this permission is strictly utilized to:</p>
         <ol>
             <li>Scan and detect changes in your selected local folders to sync them with the cloud.</li>
             <li>Read, write, and safely download files back to your device's storage.</li>
         </ol>
-        <p>Without this permission, the core file synchronization feature will not function. We do not access or collect any files outside of your explicitly selected sync paths.</p>
+        <p>Without this permission, the core file synchronization feature will not function on mobile variants. We do not access or collect any files outside of your explicitly selected sync paths.</p>
 
         <h2>LEGAL & CREDITS</h2>
         <p>SyncDrive is an independent graphical user interface (UI) client for rclone. It is not officially affiliated with, endorsed, or sponsored by the rclone core development team. Rclone is an open-source project licensed under the MIT License. SyncDrive is developed in compliance with all relevant open-source guidelines.</p>
         
-        <!-- 📧 THÊM KHU VỰC THÔNG TIN LIÊN LẠC (Developer Contact - Bắt buộc để Google duyệt) -->
+        <!-- 📧 DEVELOPER CONTACT -->
         <h2>DEVELOPER CONTACT</h2>
         <p>If you have any questions, feedback, or compliance inquiries regarding SyncDrive, feel free to reach out directly to the developer profile:</p>
         <div class="contact-box">
             <strong>Application Support Email:</strong> <a href="mailto:thangbx2014@gmail.com">thangbx2014@gmail.com</a><br>
-            <strong>Official Project Repository:</strong> <a href="https://github.com" target="_blank">GitHub Link</a>
+            <strong>Official Project Repository:</strong> <a href="https://github.com/syncdrive-ui-for-rclone/syncdrive-ui-for-rclone.github.io" target="_blank">GitHub Link</a>
         </div>
 
         <p style="margin-top: 30px;">Streamline your cloud workflow today with SyncDrive: UI for Rclone!</p>
